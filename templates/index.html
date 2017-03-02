@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="https://developer.clarifai.com/static/images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/style.css') }}"></link>
+    <title>Clarifai Image Search</title>
+</head>
+<body>
+    <div class="box">
+      <div class="container-1">
+        <form id="search-form">
+          <input type="search" id="search" type='submit' placeholder="Search..." />
+        </form>
+          <br><br><br><br>
+          <div id='results'>
+          </div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/scripts.js') }}"></script>
+</html>
